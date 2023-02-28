@@ -63,7 +63,7 @@ let gameArea = {
     clear: function() {
         this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
     }
-}
+};
 //........GAMEBALL.........//
 let color = ['rgb(255, 215, 0)','rgb(110, 15, 179)','rgb(255, 20, 147)','rgb(0, 191, 255)'];
 let c = 0;
@@ -89,7 +89,7 @@ function gameBall() {
             gameTap.play();
             dy = 2;
             distance = 0;
-        })
+        });
         if(gamePiece.y < Math.floor(gamePiece.canvasHeight/2)) {     
             by += 8;   
             score++;
@@ -102,7 +102,7 @@ function gameBall() {
         }
         gamePiece.y -= 3*x; 
         distance++;
-    }
+    };
     ctx.closePath();
 }
 //........OBSTACLES.........//
@@ -147,7 +147,7 @@ let Obstacles = [
             angle += 90;
             ctx.moveTo(this.x - this.r, this.y);
             // this.parts == 2 ? ctx.lineTo(this.x + this.r, this.y) : ctx.lineTo(this.x, this.y);
-            ctx.lineTo(this.x, this.y)
+            ctx.lineTo(this.x, this.y);
             ctx.lineCap = "round";
             ctx.lineWidth = 20;
             ctx.strokeStyle = color[i];
@@ -162,7 +162,7 @@ var highScore = JSON.parse(localStorage.getItem('CSH')) || [];
 highScore.sort(function(a, b){return b - a;});
 highScore.splice(5);
 function gameScore() {
-    ctx.font = "50px" + " " + "monospace";;
+    ctx.font = "50px" + " " + "monospace";
     ctx.fillStyle = "whitesmoke";
     ctx.fillText(score, 20, 60);
 }
