@@ -89,7 +89,7 @@ canvas{
     position: absolute;
     color: whitesmoke;
     font-family: 'Monoton';
-    background-color: rgb(59, 59, 59);
+    background-color: none;
     z-index: 3;
     -moz-user-select: none !important;
     -webkit-user-select: none !important;
@@ -158,3 +158,4 @@ canvas{
     font-size: 25px;
     justify-content: center;
 }
+

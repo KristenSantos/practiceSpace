@@ -55,7 +55,7 @@ let gameArea = {
     start : function() {
         this.canvas.width = screenWidth;
         this.canvas.height = window.innerHeight;
-        this.canvas.style.backgroundColor = 'rgb(59, 59, 59)';
+        this.canvas.style.backgroundColor = 'none';
         this.context = this.canvas.getContext('2d');
         document.body.insertBefore(this.canvas, document.body.childNodes[0]);
         requestAnimationFrame(updateGameArea);
@@ -202,7 +202,7 @@ function multiColorBall() {
     bW = gameArea.canvas.width/2;
     bH = luck + by;
     this.image = new Image();
-    this.image.src = 'IconAndSound/ball.svg';
+    this.image.src = 'round-star.svg';
     ctx.drawImage(this.image, bW - 10, bH, 20, 20); 
 } 
 //..............GAME PAUSE...........//
