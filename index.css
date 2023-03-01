@@ -21,6 +21,12 @@
     font-family: 'Lilita One';
     animation: animate 200s ease-in infinite;
     color:#F77CCD;
+    font-size: 5rem;
+    letter-spacing: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
 
 }
 @keyframes animate {
@@ -128,13 +134,7 @@ canvas{
     -moz-user-select: none !important;
     -webkit-user-select: none !important;
 }
-#title{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    font-size: 65px;
-    z-index: 3;
-}
+
 #play-main{
     height: 50%;
     width: 100%;
@@ -144,11 +144,16 @@ canvas{
     align-items: center;
     z-index: 3;
 }
-#play-main1{
-    /* height: 250px;
-    
-    
-    */
+#howTo{
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -100px; 
+}
+.play-main1{
     z-index: 3;
     position: absolute;
     animation-name: pulse_animation;
@@ -157,13 +162,11 @@ canvas{
     animation-timing-function: linear; 
     background-color:#F77CCD;
     font-family: 'Itim';
-    font-size: 2rem;
+    font-size: 1.75rem;
     cursor: pointer;
-    margin-bottom: 2em;
     text-decoration: none;
     border: #F77CCD 0.125em solid;
     color: #eee;
-    margin-bottom: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -185,6 +188,15 @@ canvas{
     87.5% { transform: scale(1.1); }
     100% { transform: scale(1);}
 }
+
+#rocket {
+width: 200px;
+height: 200px;
+transform: rotate(-34deg);
+margin-top: 10px;
+margin-left: 175px;
+}
+
 #play-main1:hover{
     cursor: pointer;
 }
@@ -195,6 +207,10 @@ canvas{
     position: absolute;
     top: 10px;
     font-size: 25px;
+    justify-content: center;
+}
+#coders{
+    display: flex;
     justify-content: center;
 }
 
