@@ -85,10 +85,12 @@ function gameBall() {
         ctx.fillStyle = this.color;
         ctx.fill();
         let x = dy;
-        document.addEventListener('click',function() {
-            gameTap.play();
-            dy = 2;
-            distance = 0;
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                gameTap.play();
+                dy = 2;
+                distance = 0;
+            }
         });
         if(gamePiece.y < Math.floor(gamePiece.canvasHeight/2)) {     
             by += 8;   
