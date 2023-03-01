@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-image:url(https://images.pond5.com/simple-star-space-background-effect-footage-023768280_prevstill.jpeg);
+    z-index: 0;
+}
 
 #high-score {
     font-family: 'Lilita One';
@@ -23,6 +30,7 @@
     color:#F77CCD;
     font-size: 5rem;
     letter-spacing: 1rem;
+    margin-top: 50px
 }
 
 @keyframes animate {
@@ -54,6 +62,10 @@
     position: absolute;
     justify-content: flex-end;
 }
+#pause2{
+    width: 50px;
+}
+
 #pause2:hover{
     cursor: pointer;
     transform: scale(1.2);
@@ -67,6 +79,10 @@
     position: absolute;
     justify-content: flex-end;
 }
+#home2 {
+    width: 50px;
+}
+
 #home2:hover{
     cursor: pointer;
     transform: scale(1.2);
@@ -220,5 +236,7 @@ margin-left: 175px;
 #tapHome{
     color: #1BC250;
     animation: animatePoints 200s ease-in infinite;
+    font-size:20px;
+    font-family: 'Itim';
 }
 
