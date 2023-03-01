@@ -85,10 +85,12 @@ function gameBall() {
         ctx.fillStyle = this.color;
         ctx.fill();
         let x = dy;
-        document.addEventListener('click',function() {
-            gameTap.play();
-            dy = 2;
-            distance = 0;
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space') {
+                gameTap.play();
+                dy = 2;
+                distance = 0;
+            }
         });
         if(gamePiece.y < Math.floor(gamePiece.canvasHeight/2)) {     
             by += 8;   
@@ -202,7 +204,7 @@ function multiColorBall() {
     bW = gameArea.canvas.width/2;
     bH = luck + by;
     this.image = new Image();
-    this.image.src = 'round-star.svg';
+    this.image.src = 'Sound&Pics/round-star.svg';
     ctx.drawImage(this.image, bW - 10, bH, 20, 20); 
 } 
 //..............GAME PAUSE...........//

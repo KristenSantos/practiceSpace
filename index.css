@@ -23,12 +23,8 @@
     color:#F77CCD;
     font-size: 5rem;
     letter-spacing: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    z-index: 3;
-
 }
+
 @keyframes animate {
     from {
       text-shadow: 0 0 20px #F155C1;
@@ -128,10 +124,8 @@ canvas{
     height: 100%;
     position: absolute;
     color: whitesmoke;
-    font-family: 'Monoton';
-    background-color: none;
-    z-index: 3;
-    -moz-user-select: none !important;
+
+    
     -webkit-user-select: none !important;
 }
 
@@ -200,6 +194,8 @@ margin-left: 175px;
 
 #play-main1:hover{
     cursor: pointer;
+    background-color: black;
+    color: white;
 }
 
 #high-score{
@@ -211,6 +207,7 @@ margin-left: 175px;
     justify-content: center;
 }
 #coders{
+    font-family: itim;
     display: flex;
     justify-content: center;
 }
