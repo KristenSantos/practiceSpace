@@ -202,7 +202,7 @@ function multiColorBall() {
     bW = gameArea.canvas.width/2;
     bH = luck + by;
     this.image = new Image();
-    this.image.src = 'round-star.svg';
+    this.image.src = 'Sound&Pics/round-star.svg';
     ctx.drawImage(this.image, bW - 10, bH, 20, 20); 
 } 
 //..............GAME PAUSE...........//
